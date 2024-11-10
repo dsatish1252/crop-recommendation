@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Crop Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_about.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Back to Home button inside the container -->
+        <a href="{{ url_for('index') }}" class="back-to-home-btn">Back to Home</a>
+
+        <h1>About the Crop Recommendation System</h1>
+        <p>This application helps farmers or agricultural experts by recommending the most suitable crop for cultivation based on soil and climate conditions.</p>
+
+        <h2>How to Use the Application</h2>
+        <ol>
+            <li>Enter the values for soil nutrients: Nitrogen, Phosphorus, and Potassium.</li>
+            <li>Provide additional environmental details: Temperature, Humidity, pH, and Rainfall.</li>
+            <li>Click the <strong>"Get Recommendation"</strong> button to see the recommended crop.</li>
+        </ol>
+
+        <h2>Input Value Guidelines</h2>
+
+        <h3>Soil Nutrients</h3>
+        <ul>
+            <li><strong>Nitrogen (N):</strong> Enter a value between <code>0</code> and <code>140</code> (mg/kg). This is a key nutrient for crop growth and impacts leaf and stem development.</li>
+            <li><strong>Phosphorus (P):</strong> Enter a value between <code>0</code> and <code>80</code> (mg/kg). Phosphorus helps in root development and influences flowering and fruiting.</li>
+            <li><strong>Potassium (K):</strong> Enter a value between <code>0</code> and <code>200</code> (mg/kg). Potassium improves water regulation, disease resistance, and overall crop quality.</li>
+        </ul>
+
+        <h3>Environmental Details</h3>
+        <ul>
+            <li><strong>Temperature:</strong> Enter a value in Celsius (°C), typically ranging from <code>10</code> to <code>45</code>. Ideal temperatures vary by crop, affecting growth rate and yield.</li>
+            <li><strong>Humidity:</strong> Enter a percentage value (e.g., <code>20%</code> to <code>100%</code>). This parameter influences transpiration and water requirements of the crop.</li>
+            <li><strong>pH:</strong> Enter a value between <code>0</code> and <code>14</code>. Most crops grow best in a slightly acidic to neutral range, around <code>5.5</code> to <code>7.5</code>.</li>
+            <li><strong>Rainfall:</strong> Enter the rainfall amount in millimeters (mm), typically between <code>0</code> and <code>300</code>. Adequate rainfall ensures sufficient moisture for crop growth.</li>
+        </ul>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Real-time crop recommendation based on user input.</li>
+            <li>Displays an image of the recommended crop.</li>
+            <li>User-friendly form layout with helpful input guidelines.</li>
+        </ul>
+    </div>
+</body>
+</html>
